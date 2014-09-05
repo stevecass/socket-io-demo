@@ -9,7 +9,7 @@ Install node.js and npm. DBC machines should have these already.
 ## To use:
 -  In a terminal, clone this repo
 -  cd into the socket-io-demo directory thus created
--  In the terminal type "npm install" and hit enter. This will download and install the two dependencies listed in package.json - express and socket.io. You may also see other packages installed installed - these are the dependencies listed by express and socket (and theirs in turn etc.) Listing packages in package.json and running npm install is analagous to listing gems in a Gemfile and running bundle.
+-  In the terminal type "npm install" and hit enter. This will download and install the two dependencies listed in package.json - express and socket.io. You may also see other packages being installed - these are the dependencies of express and socket - and their dependencies in turn, and so on. Listing modules in package.json and running npm install is analagous to listing gems in a Gemfile and running bundle.
 -  In that same window type "node server.js" - this should start the server on port 3000 - you'll hopefully see "listening on *:3000" (Note that if you are using linux, depending on your setup you may need to type nodejs in place of node.)
 -  Open safari and point it to http://localhost:3000
 -  Open another browser and point it too to http://localhost:3000. Start typing in the text field at the bottom of either browser window. You should see the pages in both browser windows update with the contents of the text field after each "key up" event.
