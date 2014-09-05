@@ -44,7 +44,7 @@ On the client side a jQuery document.ready sets things up.
 
 ```
 
-var socket=io() sets up the connection to the socket on the server. They keyup event handler tells the socket to send the value of the text field as a "chat message" event. The "socket.on" handler sets up a handler to execute each time a chat message comes in from the server.
+var socket=io() sets up the connection to the socket on the server. They keyup event handler tells the socket to send the value of the text field as a "chat message" event. The "socket.on" handler sets up a handler to execute each time a chat message event comes in from the server. These events can have any name of course - it's just a label.
 
 So when I hit a key in the text field these events happen:
 - keyup handler sends an event to the socket.
