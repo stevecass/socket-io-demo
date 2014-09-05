@@ -50,7 +50,7 @@ So when I hit a key in the text field these events happen:
 - keyup handler sends an event to the socket.
 - server-side socket.on('chat message'...) event handler executes.
 - That server-side handler calls io.emit to send the message to all clients.
-- The client-side "socket.on" gets that event and calls the attached handler which appends an <li> to the ul.id="messages" element in the DOM.
+- The client-side "socket.on" gets that event and calls the attached handler which appends an li element to the ul.id="messages" element in the DOM.
 
 
 
