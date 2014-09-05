@@ -20,7 +20,7 @@ server.js  contains this block:
 ```
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
-    io.emit('remote chat message', msg);
+    io.emit('chat message', msg);
     console.log('message: ' + msg);
   });
 });
